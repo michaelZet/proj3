@@ -1,3 +1,5 @@
+package obiektowosc;
+
 public class nju {
     //atrybuty klasy
     private String name;
@@ -5,12 +7,22 @@ public class nju {
     private Integer birthyear;
     private Integer age;
     //konstruktor
-    nju(String name, String surname, Integer birthyear){
+    public nju(String name, String surname, Integer birthyear){
         this.name = name;
         this.surname = surname;
         this.birthyear = birthyear;
         this.age = this.obliczwiek();
+
     }
+
+//slowo static pozwala dostac sie do tej funkcji bez inicjalizacji obiektu
+    //nie mozemy operwac w niej na zadnych atrybutach/metodach niestatycznych
+    public static void opiszklase(){
+        System.out.println("Klasa oblicza wiek i umozliwia przedstawienie sie obiektu");
+    }
+
+
+
     //metody klasy
     Integer obliczwiek(){
         Integer actualyear = 2019;

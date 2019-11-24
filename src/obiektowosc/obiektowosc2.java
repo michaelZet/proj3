@@ -1,3 +1,7 @@
+package obiektowosc;
+
+import obiektowosc.Car;
+
 public class obiektowosc2 {
     public static void main(String[] args) {
         //2 obiekty klasy Car
